@@ -13,7 +13,7 @@
     "esModuleInterop": true,
     "moduleResolution": "Node"
   },
-  "include": ["src"],
+  "include": ["src", "GeneratedAntlr"],
   "compileOnSave": false,
   "exclude": [
     "node_modules",

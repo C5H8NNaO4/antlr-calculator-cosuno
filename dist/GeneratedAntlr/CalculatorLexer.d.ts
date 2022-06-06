@@ -40,7 +40,7 @@ export declare class CalculatorLexer extends Lexer {
     static readonly SINH = 35;
     static readonly COSH = 36;
     static readonly TANH = 37;
-    static readonly ARCSIN = 38;
+    static readonly ASI = 38;
     static readonly ARCCOS = 39;
     static readonly ARCTAN = 40;
     static readonly ARCTAN2 = 41;

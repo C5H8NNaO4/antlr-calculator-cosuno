@@ -18,7 +18,7 @@ import { CotContext } from "./CalculatorParser";
 import { SinhContext } from "./CalculatorParser";
 import { CoshContext } from "./CalculatorParser";
 import { TanhContext } from "./CalculatorParser";
-import { ArcsinContext } from "./CalculatorParser";
+import { ASIContext } from "./CalculatorParser";
 import { ArccosContext } from "./CalculatorParser";
 import { ArctanContext } from "./CalculatorParser";
 import { Arctan2Context } from "./CalculatorParser";
@@ -254,17 +254,17 @@ export interface CalculatorListener extends ParseTreeListener {
 	exitTanh?: (ctx: TanhContext) => void;
 
 	/**
-	 * Enter a parse tree produced by the `Arcsin`
+	 * Enter a parse tree produced by the `ASI`
 	 * labeled alternative in `CalculatorParser.expression`.
 	 * @param ctx the parse tree
 	 */
-	enterArcsin?: (ctx: ArcsinContext) => void;
+	enterASI?: (ctx: ASIContext) => void;
 	/**
-	 * Exit a parse tree produced by the `Arcsin`
+	 * Exit a parse tree produced by the `ASI`
 	 * labeled alternative in `CalculatorParser.expression`.
 	 * @param ctx the parse tree
 	 */
-	exitArcsin?: (ctx: ArcsinContext) => void;
+	exitASI?: (ctx: ASIContext) => void;
 
 	/**
 	 * Enter a parse tree produced by the `Arccos`
