@@ -53,7 +53,7 @@ export class CalculatorLexer extends Lexer {
 	public static readonly SINH = 35;
 	public static readonly COSH = 36;
 	public static readonly TANH = 37;
-	public static readonly ARCSIN = 38;
+	public static readonly ASI = 38;
 	public static readonly ARCCOS = 39;
 	public static readonly ARCTAN = 40;
 	public static readonly ARCTAN2 = 41;
@@ -87,7 +87,7 @@ export class CalculatorLexer extends Lexer {
 		"NUMBER", "FLOAT", "DIGIT", "MOD", "WHOLE", "MUL", "DIV", "ADD", "SUB", 
 		"PI", "EXPONENT", "NEGEXPONENT", "EULER", "SQRT", "SQR", "FLOOR", "CEIL", 
 		"ABS", "ROUNDK", "ROUND", "TRUNC", "SIN", "COS", "TAN", "COT", "SINH", 
-		"COSH", "TANH", "ARCSIN", "ARCCOS", "ARCTAN", "ARCTAN2", "ARCCOT", "EXP", 
+		"COSH", "TANH", "ASI", "ARCCOS", "ARCTAN", "ARCTAN2", "ARCCOT", "EXP", 
 		"LN", "EEX", "LOG", "RAD", "DEG", "MIN", "MAX", "WS", "COM", "SUBSTITUTION", 
 		"SEMICOLON", "INVALID", "COMMENT",
 	];
@@ -107,7 +107,7 @@ export class CalculatorLexer extends Lexer {
 		undefined, undefined, undefined, "NUMBER", "FLOAT", "DIGIT", "MOD", "WHOLE", 
 		"MUL", "DIV", "ADD", "SUB", "PI", "EXPONENT", "NEGEXPONENT", "EULER", 
 		"SQRT", "SQR", "FLOOR", "CEIL", "ABS", "ROUNDK", "ROUND", "TRUNC", "SIN", 
-		"COS", "TAN", "COT", "SINH", "COSH", "TANH", "ARCSIN", "ARCCOS", "ARCTAN", 
+		"COS", "TAN", "COT", "SINH", "COSH", "TANH", "ASI", "ARCCOS", "ARCTAN", 
 		"ARCTAN2", "ARCCOT", "EXP", "LN", "EEX", "LOG", "RAD", "DEG", "MIN", "MAX", 
 		"WS", "COM", "SUBSTITUTION", "SEMICOLON", "INVALID",
 	];

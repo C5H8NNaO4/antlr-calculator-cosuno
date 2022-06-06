@@ -37,7 +37,7 @@ expression:
 	| SINH expression											# Sinh // Sinus Hypererbolicus
 	| COSH expression											# Cosh // Cosinus Hyperbolicus
 	| TANH expression											# Tanh // Tangens Hyperbolicus
-	| ARCSIN expression											# Arcsin // Inverse Sinus
+	| ASI expression											# ASI // Inverse Sinus
 	| ARCCOS expression											# Arccos // Inverse Cosinus
 	| ARCTAN expression											# Arctan // Inverse Tangens
 	| ARCTAN2 '(' expression ';' expression ')'					# Arctan2 // Atan2
@@ -104,7 +104,7 @@ COT: [Cc][Oo][Tt];
 SINH: [Ss][Ii][Nn][Hh];
 COSH: [Cc][Oo][Ss][Hh];
 TANH: [Tt][Aa][Nn][Hh];
-ARCSIN: [Aa][Ss][Ii];
+ASI: [Aa][Ss][Ii];
 ARCCOS: [Aa][Cc][Oo][Ss];
 ARCTAN: [Aa][Tt][Aa][Nn];
 ARCTAN2: [Aa][Rr][Cc][Tt][Aa][Nn][2];

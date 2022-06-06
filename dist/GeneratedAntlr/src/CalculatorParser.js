@@ -270,11 +270,11 @@ export class CalculatorParser extends Parser {
                         break;
                     case 16:
                         {
-                            _localctx = new ArcsinContext(_localctx);
+                            _localctx = new ASIContext(_localctx);
                             this._ctx = _localctx;
                             _prevctx = _localctx;
                             this.state = 53;
-                            this.match(CalculatorParser.ARCSIN);
+                            this.match(CalculatorParser.ASI);
                             this.state = 54;
                             this.expression(30);
                         }
@@ -923,7 +923,7 @@ CalculatorParser.COT = 34;
 CalculatorParser.SINH = 35;
 CalculatorParser.COSH = 36;
 CalculatorParser.TANH = 37;
-CalculatorParser.ARCSIN = 38;
+CalculatorParser.ASI = 38;
 CalculatorParser.ARCCOS = 39;
 CalculatorParser.ARCTAN = 40;
 CalculatorParser.ARCTAN2 = 41;
@@ -964,7 +964,7 @@ CalculatorParser._SYMBOLIC_NAMES = [
     undefined, undefined, undefined, "NUMBER", "FLOAT", "DIGIT", "MOD", "WHOLE",
     "MUL", "DIV", "ADD", "SUB", "PI", "EXPONENT", "NEGEXPONENT", "EULER",
     "SQRT", "SQR", "FLOOR", "CEIL", "ABS", "ROUNDK", "ROUND", "TRUNC", "SIN",
-    "COS", "TAN", "COT", "SINH", "COSH", "TANH", "ARCSIN", "ARCCOS", "ARCTAN",
+    "COS", "TAN", "COT", "SINH", "COSH", "TANH", "ASI", "ARCCOS", "ARCTAN",
     "ARCTAN2", "ARCCOT", "EXP", "LN", "EEX", "LOG", "RAD", "DEG", "MIN", "MAX",
     "WS", "COM", "SUBSTITUTION", "SEMICOLON", "INVALID",
 ];
@@ -1570,8 +1570,8 @@ export class TanhContext extends ExpressionContext {
         }
     }
 }
-export class ArcsinContext extends ExpressionContext {
-    ARCSIN() { return this.getToken(CalculatorParser.ARCSIN, 0); }
+export class ASIContext extends ExpressionContext {
+    ASI() { return this.getToken(CalculatorParser.ASI, 0); }
     expression() {
         return this.getRuleContext(0, ExpressionContext);
     }
@@ -1581,20 +1581,20 @@ export class ArcsinContext extends ExpressionContext {
     }
     // @Override
     enterRule(listener) {
-        if (listener.enterArcsin) {
-            listener.enterArcsin(this);
+        if (listener.enterASI) {
+            listener.enterASI(this);
         }
     }
     // @Override
     exitRule(listener) {
-        if (listener.exitArcsin) {
-            listener.exitArcsin(this);
+        if (listener.exitASI) {
+            listener.exitASI(this);
         }
     }
     // @Override
     accept(visitor) {
-        if (visitor.visitArcsin) {
-            return visitor.visitArcsin(this);
+        if (visitor.visitASI) {
+            return visitor.visitASI(this);
         }
         else {
             return visitor.visitChildren(this);
