@@ -69,7 +69,7 @@ CalculatorLexer.COT = 34;
 CalculatorLexer.SINH = 35;
 CalculatorLexer.COSH = 36;
 CalculatorLexer.TANH = 37;
-CalculatorLexer.ASI = 38;
+CalculatorLexer.ARCSIN = 38;
 CalculatorLexer.ARCCOS = 39;
 CalculatorLexer.ARCTAN = 40;
 CalculatorLexer.ARCTAN2 = 41;
@@ -100,7 +100,7 @@ CalculatorLexer.ruleNames = [
     "NUMBER", "FLOAT", "DIGIT", "MOD", "WHOLE", "MUL", "DIV", "ADD", "SUB",
     "PI", "EXPONENT", "NEGEXPONENT", "EULER", "SQRT", "SQR", "FLOOR", "CEIL",
     "ABS", "ROUNDK", "ROUND", "TRUNC", "SIN", "COS", "TAN", "COT", "SINH",
-    "COSH", "TANH", "ASI", "ARCCOS", "ARCTAN", "ARCTAN2", "ARCCOT", "EXP",
+    "COSH", "TANH", "ARCSIN", "ARCCOS", "ARCTAN", "ARCTAN2", "ARCCOT", "EXP",
     "LN", "EEX", "LOG", "RAD", "DEG", "MIN", "MAX", "WS", "COM", "SUBSTITUTION",
     "SEMICOLON", "INVALID", "COMMENT",
 ];
@@ -119,7 +119,7 @@ CalculatorLexer._SYMBOLIC_NAMES = [
     undefined, undefined, undefined, "NUMBER", "FLOAT", "DIGIT", "MOD", "WHOLE",
     "MUL", "DIV", "ADD", "SUB", "PI", "EXPONENT", "NEGEXPONENT", "EULER",
     "SQRT", "SQR", "FLOOR", "CEIL", "ABS", "ROUNDK", "ROUND", "TRUNC", "SIN",
-    "COS", "TAN", "COT", "SINH", "COSH", "TANH", "ASI", "ARCCOS", "ARCTAN",
+    "COS", "TAN", "COT", "SINH", "COSH", "TANH", "ARCSIN", "ARCCOS", "ARCTAN",
     "ARCTAN2", "ARCCOT", "EXP", "LN", "EEX", "LOG", "RAD", "DEG", "MIN", "MAX",
     "WS", "COM", "SUBSTITUTION", "SEMICOLON", "INVALID",
 ];

@@ -65,7 +65,7 @@ export class CalculatorParser extends Parser {
 	public static readonly SINH = 35;
 	public static readonly COSH = 36;
 	public static readonly TANH = 37;
-	public static readonly ASI = 38;
+	public static readonly ARCSIN = 38;
 	public static readonly ARCCOS = 39;
 	public static readonly ARCTAN = 40;
 	public static readonly ARCTAN2 = 41;
@@ -107,7 +107,7 @@ export class CalculatorParser extends Parser {
 		undefined, undefined, undefined, "NUMBER", "FLOAT", "DIGIT", "MOD", "WHOLE", 
 		"MUL", "DIV", "ADD", "SUB", "PI", "EXPONENT", "NEGEXPONENT", "EULER", 
 		"SQRT", "SQR", "FLOOR", "CEIL", "ABS", "ROUNDK", "ROUND", "TRUNC", "SIN", 
-		"COS", "TAN", "COT", "SINH", "COSH", "TANH", "ASI", "ARCCOS", "ARCTAN", 
+		"COS", "TAN", "COT", "SINH", "COSH", "TANH", "ARCSIN", "ARCCOS", "ARCTAN", 
 		"ARCTAN2", "ARCCOT", "EXP", "LN", "EEX", "LOG", "RAD", "DEG", "MIN", "MAX", 
 		"WS", "COM", "SUBSTITUTION", "SEMICOLON", "INVALID",
 	];
@@ -399,11 +399,11 @@ export class CalculatorParser extends Parser {
 
 			case 16:
 				{
-				_localctx = new ASIContext(_localctx);
+				_localctx = new ArcsinContext(_localctx);
 				this._ctx = _localctx;
 				_prevctx = _localctx;
 				this.state = 53;
-				this.match(CalculatorParser.ASI);
+				this.match(CalculatorParser.ARCSIN);
 				this.state = 54;
 				this.expression(30);
 				}
@@ -1643,8 +1643,8 @@ export class TanhContext extends ExpressionContext {
 		}
 	}
 }
-export class ASIContext extends ExpressionContext {
-	public ASI(): TerminalNode { return this.getToken(CalculatorParser.ASI, 0); }
+export class ArcsinContext extends ExpressionContext {
+	public ARCSIN(): TerminalNode { return this.getToken(CalculatorParser.ARCSIN, 0); }
 	public expression(): ExpressionContext {
 		return this.getRuleContext(0, ExpressionContext);
 	}
@@ -1654,20 +1654,20 @@ export class ASIContext extends ExpressionContext {
 	}
 	// @Override
 	public enterRule(listener: CalculatorListener): void {
-		if (listener.enterASI) {
-			listener.enterASI(this);
+		if (listener.enterArcsin) {
+			listener.enterArcsin(this);
 		}
 	}
 	// @Override
 	public exitRule(listener: CalculatorListener): void {
-		if (listener.exitASI) {
-			listener.exitASI(this);
+		if (listener.exitArcsin) {
+			listener.exitArcsin(this);
 		}
 	}
 	// @Override
 	public accept<Result>(visitor: CalculatorVisitor<Result>): Result {
-		if (visitor.visitASI) {
-			return visitor.visitASI(this);
+		if (visitor.visitArcsin) {
+			return visitor.visitArcsin(this);
 		} else {
 			return visitor.visitChildren(this);
 		}

@@ -4,7 +4,7 @@ import { AbstractParseTreeVisitor } from 'antlr4ts/tree/AbstractParseTreeVisitor
 import { AddSubContext } from "./GeneratedAntlr/CalculatorParser";
 import { ArccosContext } from "./GeneratedAntlr/CalculatorParser";
 import { ArccotContext } from "./GeneratedAntlr/CalculatorParser";
-import { ASIContext as ArcsinContext } from "./GeneratedAntlr/CalculatorParser";
+import { ArcsinContext } from "./GeneratedAntlr/CalculatorParser";
 import { Arctan2Context } from "./GeneratedAntlr/CalculatorParser";
 import { ArctanContext } from "./GeneratedAntlr/CalculatorParser";
 import { CalculatorContext } from "./GeneratedAntlr/CalculatorParser";

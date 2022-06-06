@@ -47,7 +47,7 @@ export declare class CalculatorParser extends Parser {
     static readonly SINH = 35;
     static readonly COSH = 36;
     static readonly TANH = 37;
-    static readonly ASI = 38;
+    static readonly ARCSIN = 38;
     static readonly ARCCOS = 39;
     static readonly ARCTAN = 40;
     static readonly ARCTAN2 = 41;
@@ -227,8 +227,8 @@ export declare class TanhContext extends ExpressionContext {
     exitRule(listener: CalculatorListener): void;
     accept<Result>(visitor: CalculatorVisitor<Result>): Result;
 }
-export declare class ASIContext extends ExpressionContext {
-    ASI(): TerminalNode;
+export declare class ArcsinContext extends ExpressionContext {
+    ARCSIN(): TerminalNode;
     expression(): ExpressionContext;
     constructor(ctx: ExpressionContext);
     enterRule(listener: CalculatorListener): void;

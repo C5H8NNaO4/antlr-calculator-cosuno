@@ -14,7 +14,7 @@ import { CotContext } from "./CalculatorParser";
 import { SinhContext } from "./CalculatorParser";
 import { CoshContext } from "./CalculatorParser";
 import { TanhContext } from "./CalculatorParser";
-import { ASIContext } from "./CalculatorParser";
+import { ArcsinContext } from "./CalculatorParser";
 import { ArccosContext } from "./CalculatorParser";
 import { ArctanContext } from "./CalculatorParser";
 import { Arctan2Context } from "./CalculatorParser";
@@ -161,12 +161,12 @@ export interface CalculatorVisitor<Result> extends ParseTreeVisitor<Result> {
      */
     visitTanh?: (ctx: TanhContext) => Result;
     /**
-     * Visit a parse tree produced by the `ASI`
+     * Visit a parse tree produced by the `Arcsin`
      * labeled alternative in `CalculatorParser.expression`.
      * @param ctx the parse tree
      * @return the visitor result
      */
-    visitASI?: (ctx: ASIContext) => Result;
+    visitArcsin?: (ctx: ArcsinContext) => Result;
     /**
      * Visit a parse tree produced by the `Arccos`
      * labeled alternative in `CalculatorParser.expression`.
