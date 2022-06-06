@@ -1,10 +1,10 @@
-﻿type Tree = Record<string, Tree>;
+﻿import { CalculatorContext } from './GeneratedAntlr/CalculatorParser';
 
 export type CalculationOptions = {
-  includeAst: boolean;
+  includeAst?: boolean;
 };
 export class CalculationResult {
-  public ast: Tree = null;
+  public ast: CalculatorContext = null;
   public isValid: boolean = false;
   public errorPosition: number | null = null;
   public errorMessage: string | null = null;
