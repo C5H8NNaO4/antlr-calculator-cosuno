@@ -14,7 +14,8 @@
     "tsc": "tsc",
     "test": "karma start karma.conf.js",
     "test:ci": "karma start karma.conf.ci.js",
-    "antlr4ts": "antlr4ts -visitor -o ./src/GeneratedAntlr ./src/Calculator.g4"
+    "antlr4ts": "antlr4ts -visitor -o ./src/GeneratedAntlr ./src/Calculator.g4",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "antlr4ts": "0.5.0-alpha.4"
