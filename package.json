@@ -1,6 +1,6 @@
 {
   "name": "antlr-calculator-cosuno",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -15,7 +15,7 @@
     "test": "karma start karma.conf.js",
     "test:ci": "karma start karma.conf.ci.js",
     "antlr4ts": "antlr4ts -visitor -o ./src/GeneratedAntlr ./src/Calculator.g4",
-    "postinstall": "npm run build"
+    "postinstall": "tsc"
   },
   "dependencies": {
     "antlr4ts": "0.5.0-alpha.4"
